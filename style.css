@@ -1,0 +1,307 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'papernotes';
+    src: url('fonts/papernotes/Papernotes.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'papernotes';
+    background-color: rgb(215, 230, 243)
+}
+
+h1{ font-size: 3.5rem;}
+h2{ font-size: 2.7rem;}
+h3{ font-size: 2rem;}
+h4{ font-size: 1.3rem;}
+p{ font-size: 1.25rem;}
+ul{ list-style: none;}
+li{ font-size: 1.25rem;}
+a{text-decoration: none; }
+
+h1,h2,h3,h4,h5,p{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header{
+    padding-bottom: 10px;
+    
+    
+}
+header #background-image h1{
+    padding-bottom: 1vh;
+}
+footer{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(94, 140, 225);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#background-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(118, 159, 235, 0.48),
+        rgba(118, 159, 235, 0.48)
+    ), url("img/aguila.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#about-me{
+    padding-bottom: 10px;
+}
+
+#column-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 25vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*border-top: .2rem solid rgb(0, 179, 255);
+    border-right: .2rem solid rgb(0, 179, 255);
+    border-left: .2rem solid rgb(0, 179, 255);*/
+    background-color: rgba(118, 159, 235, 0.48);
+}
+#column-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px;
+    /* border-bottom: .2rem solid rgb(0, 179, 255);
+    border-right: .2rem solid rgb(0, 179, 255);
+    border-left: .2rem solid rgb(0, 179, 255);*/
+    background-color: rgba(118, 159, 235, 0.727);
+}
+#my-picture{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.35)
+    ), url("img/aguila.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    border-radius: 15px;
+}
+
+#column-left h4{
+    font-size: 2.7rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color:rgba(0,0,0,.8);
+    
+}
+
+#column-left h5{
+    font-size: 2.3rem;
+    color:rgba(0,0,0,.8);
+}
+#column-left p{
+    font-size: 2.0rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color:rgb(106, 98, 98);
+}
+
+#my-projects{
+    text-align: center;
+}
+
+#my-projects h2{
+    color: rgba(0,0,0,.8);
+}
+
+#project1{
+display: inline-block;
+width: 35%;
+height: 35vh;
+align-items: center;
+text-align: center;
+margin-bottom: 1em;
+background-color: rgba(96, 104, 107, 0.35);
+border-radius: 15px;
+}
+
+#photo-project1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/logo.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+#project1 h4{
+    color: rgb(0,0,0);
+}
+
+#project1 p{
+    color: rgb(0,0,0);
+
+}
+
+#project1 a{
+    color:rgb(24, 25, 25);
+}
+
+#technologies{
+display: block;
+text-align: center;
+
+
+}
+
+#technologies h2{
+    color: rgba(0,0,0,.8);
+    padding-top: 1rem;
+}
+
+#photo-logo1{
+    display: inline-block;
+    flex-direction: column;
+    background-size: cover;
+    font-size: 10rem;
+    border-radius: 15px;
+    color: rgb(255, 98, 0);
+    padding: 1rem;
+}
+
+#photo-logo2{
+    display: inline-block;
+    flex-direction: column;
+    background-size: cover;
+    font-size: 10rem;
+    background-position: center center;
+    border-radius: 15px;
+    color: rgb(0, 81, 255);
+    padding: 1rem;
+}
+
+#photo-logo3{
+    display: inline-block;
+    flex-direction: column;
+    background-size: cover;
+    font-size: 10rem;
+    background-position: center center;
+    border-radius: 15px;
+    color: rgb(255,255,0);
+    padding: 1rem;
+}
+
+#photo-logo4{
+    display: inline-block;
+    flex-direction: column;
+    background-size: cover;
+    font-size: 10rem;
+    background-position: center center;
+    border-radius: 15px;
+    color: rgb(255,0,0);
+    padding: 1rem;
+}
+
+
+
+#get-in-touch h4{
+    font-size: 3.0rem ;
+    text-align: center;
+    color: rgb(255, 255,255);
+    padding: 1rem;
+}
+
+#get-in-touch p{
+    font-size: 2.0rem ;
+    color: rgba(255, 255,255, .6);
+}
+
+#network{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+#email{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#network h4{
+    font-size: 2.5rem;
+}
+#network p{
+    font-size: 1.8rem;
+}
+
+#network a{
+    font-size: 2rem;
+    color: rgb(116, 222, 246);
+}
+
+#email h4{
+    font-size: 2.5rem;
+}
+#email p{
+    font-size: 1.8rem;
+    color: rgb(116, 222, 246);
+}
+
+#copy-footer{
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255,255,255, .8);
+}
+
+#span{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgba(59, 59, 59, 0.719)
+}
+
+#email h4{
+    color: rgba(255, 255,255, .6);
+}
+
+#network h4{
+    color: rgba(255, 255,255, .6);
+}
+
+#network p{
+    color: rgba(255, 255,255, .6);
+}
