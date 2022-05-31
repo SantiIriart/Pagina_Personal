@@ -84,9 +84,6 @@ footer{
     height: 25vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    /*border-top: .2rem solid rgb(0, 179, 255);
-    border-right: .2rem solid rgb(0, 179, 255);
-    border-left: .2rem solid rgb(0, 179, 255);*/
     background-color: rgba(118, 159, 235, 0.48);
 }
 #column-left{
@@ -95,12 +92,8 @@ footer{
     text-align: center;
     width: 100%;
     padding: 20px;
-    box-shadow: 5px;
     border-bottom-left-radius: 15px ;
     border-bottom-right-radius: 15px;
-    /* border-bottom: .2rem solid rgb(0, 179, 255);
-    border-right: .2rem solid rgb(0, 179, 255);
-    border-left: .2rem solid rgb(0, 179, 255);*/
     background-color: rgba(118, 159, 235, 0.727);
 }
 #my-picture{
@@ -191,47 +184,29 @@ text-align: center;
     padding-top: 1rem;
 }
 
-#photo-logo1{
+#photo-logo1, #photo-logo2, #photo-logo3, #photo-logo4{
     display: inline-block;
     flex-direction: column;
     background-size: cover;
     font-size: 10rem;
     border-radius: 15px;
-    color: rgb(255, 98, 0);
     padding: 1rem;
+}
+
+#photo-logo1{
+    color: rgb(255, 98, 0);
 }
 
 #photo-logo2{
-    display: inline-block;
-    flex-direction: column;
-    background-size: cover;
-    font-size: 10rem;
-    background-position: center center;
-    border-radius: 15px;
     color: rgb(0, 81, 255);
-    padding: 1rem;
 }
 
 #photo-logo3{
-    display: inline-block;
-    flex-direction: column;
-    background-size: cover;
-    font-size: 10rem;
-    background-position: center center;
-    border-radius: 15px;
     color: rgb(255,255,0);
-    padding: 1rem;
 }
 
 #photo-logo4{
-    display: inline-block;
-    flex-direction: column;
-    background-size: cover;
-    font-size: 10rem;
-    background-position: center center;
-    border-radius: 15px;
     color: rgb(255,0,0);
-    padding: 1rem;
 }
 
 
@@ -294,14 +269,108 @@ text-align: center;
     color:rgba(59, 59, 59, 0.719)
 }
 
-#email h4{
+#email h4, #network h4, #network p{
     color: rgba(255, 255,255, .6);
 }
 
-#network h4{
-    color: rgba(255, 255,255, .6);
-}
 
-#network p{
-    color: rgba(255, 255,255, .6);
+@media(min-width: 720px) {
+    #about-me{
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        align-items: flex-start;
+
+    }
+
+    #column-left{
+        display: inline-block;
+        text-align: left;
+        border-radius: 0px;
+        background-color: rgba(118, 159, 235, 0.727);
+        width: 60%;
+        height: 50vh;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    #column-right{
+        display: flex;
+        text-align: center;
+        height: 50vh;
+        width: 40%;
+        background-color: rgba(118, 159, 235, 0.48);
+        align-items: center;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #my-picture{
+        border-radius: 0px;
+    }
+
+    #column-left h4{
+        padding: 1.5rem;
+        padding-top: 10vh;
+        font-size: 4.0rem;
+
+    }
+
+    #column-left h5{
+            padding-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            font-size: 3.0rem;
+    }
+    
+    #column-left p{
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+    
+    #my-projects{
+        padding-top: 7vh;
+    }
+
+    #my-projects h2{
+        padding-bottom: 1rem;
+    }
+
+    #project1 h4, #project1 p{
+        display: none;
+    }
+
+    #project1 h4:hover, #project1 p:hover{
+        display: block;
+        transition: 0s;
+    }
+
+
+    #technologies{
+        padding-bottom: 1rem;
+    }
+
+    #technologies h2{
+        padding: 1.5rem;
+    }
+
+    #photo-logo1:hover, #photo-logo2:hover, #photo-logo3:hover, #photo-logo4:hover{
+        color:rgba(255, 255, 255, 0.8);
+        transition-duration: .8s;
+    }
+
+    #photo-logo1:hover{
+        background-color:rgb(253, 130, 53);
+    }
+
+    #photo-logo2:hover{
+        background-color:rgb(67, 67, 255);
+    }
+
+    #photo-logo3:hover{
+        background-color:rgb(233, 255, 67);
+    }
+
+    #photo-logo4:hover{
+        background-color:rgb(255, 67, 67);
+    }
 }
