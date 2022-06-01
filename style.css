@@ -336,12 +336,12 @@ text-align: center;
     }
 
     #project1 h4, #project1 p{
-        display: none;
+        opacity: 0;
     }
 
-    #project1 h4:hover, #project1 p:hover{
-        display: block;
-        transition: 0s;
+    #project1:hover h4, #project1:hover p{
+        opacity: 1;
+        transition-duration: .8s;
     }
 
 
